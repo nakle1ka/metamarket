@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './Header.module.css'
-import User from './../../shared/img/user.png'
-import Bell from './../../shared/img/bell.png'
-import Cart from './../../shared/img/cart.png'
+import User from './../../../shared/img/user.png'
+import Bell from './../../../shared/img/bell.png'
+import Cart from './../../../shared/img/cart.png'
 
 export default function Utilities() {
   return (
