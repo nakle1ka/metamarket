@@ -1,0 +1,13 @@
+import React from 'react'
+import styles from './Burger.module.css'
+export default function Burger() {
+  return (
+      <div className={styles.burger}>
+          <svg width="33" height="25" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="33" height="5.55556" rx="2.77778" fill="#3AAFA9" />
+              <rect y="9.72217" width="33" height="5.55556" rx="2.77778" fill="#3AAFA9" />
+              <rect y="19.4445" width="33" height="5.55556" rx="2.77778" fill="#3AAFA9" />
+          </svg>
+      </div>
+  )
+}

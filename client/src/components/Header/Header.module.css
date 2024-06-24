@@ -1,0 +1,47 @@
+.wrapper {
+  display: block;
+  position: sticky;
+  height: 100vw;
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+  gap: 20px;
+}
+.searchInput{
+  display: flex;
+}
+.nav {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.input{
+  width: 1260px;
+  height: 60px;
+  border: 2px solid var(--famous-color);
+  border-radius: 15px 0px 0px 15px;
+  outline: none;
+}
+.Btn{
+  background-color: var(--famous-color);
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  width: 50px;
+}
+.utilitiesContainer{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.utilities{
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+
+  width: 60px;
+  height: 60px;
+  background-color: var(--icons-color);
+  border-radius: 100%;
+}
