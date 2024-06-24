@@ -1,10 +1,11 @@
-import testIcon from "./imgs/img/bell.png"
-
+import './style.css';
+import Header from './components/Header/Header';
+import Megasale from './components/Megasale/Megasale';
 function App() {
   return (
     <>
-      <h1>start</h1>
-      <img src={testIcon} alt="" />
+      <Header />
+      <Megasale />
     </>
   );
 }
