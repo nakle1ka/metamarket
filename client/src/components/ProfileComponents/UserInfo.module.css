@@ -1,0 +1,102 @@
+.profileImg {
+	width: 150px;
+	height: 150px;
+}
+
+.relativeContainer {
+    
+	text-align: center;
+    position: relative;
+    
+}
+
+.EditIcon {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+}
+
+.EditIconName{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top:-10px;
+    right:-30px;
+}
+
+.UserInfoContainer {
+    max-width: 384px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.IconProfileContainer {
+	width: 250px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: var(--light-famous-color);
+}
+
+.UsernameText{
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.UsernameStatus{
+    font-weight: 600;
+    font-size: 24px;
+    color:var(--famous-color)
+}
+
+.InfoList{
+    list-style: none;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+.ItemInfoList{
+    margin-top:20px;
+    display: flex;
+    align-items: center;
+}
+
+.ItemInfoList:nth-child(1)::before{
+    content:'';
+    display: block;
+    width:60px;
+    height: 60px;
+    background-image: url(../../shared/img/Phone.png);
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.ItemInfoList:nth-child(2)::before{
+    content:'';
+    display: block;
+    width:60px;
+    height: 60px;
+    background-image: url(../../shared/img/email.png);
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ItemInfoList:nth-child(3)::before{
+    content:'';
+    display: block;
+    width:60px;
+    height: 60px;
+    background-image: url(../../shared/img/Star.png);
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
