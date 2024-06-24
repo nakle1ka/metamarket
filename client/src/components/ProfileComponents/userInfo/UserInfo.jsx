@@ -1,14 +1,15 @@
-import defualtProfileImg from '../../shared/svg/profileImg.svg'
-import EditProfile from '../../shared/img/edit_profile.png'
+import defualtProfileImg from '../../../shared/svg/profileImg.svg'
+import EditProfile from '../../../shared/img/edit_profile.png'
 import classes from './UserInfo.module.css'
+import ContactInfo from './contactInfo/ContactInfo'
 export default function UserInfo() {
 	return (
 		<>
-			<div className={classes.UserInfoContainer}>
+			<section className={classes.UserInfoContainer}>
 				<div className={classes.relativeContainer}>
 					<img src={EditProfile} className={classes.EditIcon} />
 					<div className={classes.IconProfileContainer}>
-						<img src={defualtProfileImg} className={classes.profileImg} />
+						<img src={defualtProfileImg} className={classes.profileImg} alt='иконка профиля'/>
 					</div>
 				</div>
 
@@ -17,12 +18,12 @@ export default function UserInfo() {
 					<p className={classes.UsernameText}>Username</p>
 					<p className={classes.UsernameStatus}>покупатель</p>
 				</div>
-				<ul className={classes.InfoList}>
-					<li className={classes.ItemInfoList}>+8 800 555 35 35</li>
-					<li className={classes.ItemInfoList}>example@email.com</li>
-					<li className={classes.ItemInfoList}>5.0 (2 отзыва)</li>
-				</ul>
-			</div>
+				<ContactInfo
+					telephone='+8 800 555 35-35'
+					email='example@email.com'
+					reviews='5.0 (2 оценки)'
+				/>
+			</section>
 		</>
 	)
 }

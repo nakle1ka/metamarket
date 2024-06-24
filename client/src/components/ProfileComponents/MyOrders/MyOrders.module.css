@@ -1,0 +1,43 @@
+.MyOrdersSection{
+    margin-left:200px;
+}
+
+.OrdersContainer{
+    overflow-y: auto;
+    height: 550px;
+    
+    
+}
+
+
+.OrdersContainer::-webkit-scrollbar{
+    appearance: none;
+    width:10px;
+   
+}
+
+.OrdersContainer::-webkit-scrollbar-track{
+    background-color: var(--light-famous-color);
+}
+
+.OrdersContainer::-webkit-scrollbar-thumb{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--famous-color);
+}
+
+.OrdersLogotype{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+}
+.OrdersLogotype::before{
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../../../shared/img/ShoppingBasket.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}

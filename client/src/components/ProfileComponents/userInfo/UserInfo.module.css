@@ -1,0 +1,64 @@
+.profileImg {
+	width: 150px;
+	height: 150px;
+}
+
+.relativeContainer {
+    
+	text-align: center;
+    position: relative;
+    
+}
+
+.EditIcon {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	border-radius:50%;
+	
+}
+
+.EditIconName:hover,.EditIcon:hover{
+	cursor: pointer;
+	background-color: var(--light-famous-color);
+}
+
+.EditIconName{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top:-10px;
+    right:-30px;
+	border-radius: 50%;
+}
+
+.UserInfoContainer {
+    max-width: 384px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.IconProfileContainer {
+	width: 250px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: var(--light-famous-color);
+}
+
+.UsernameText{
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.UsernameStatus{
+    font-weight: 600;
+    font-size: 24px;
+    color:var(--famous-color)
+}
+

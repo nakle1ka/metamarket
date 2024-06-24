@@ -1,0 +1,46 @@
+.InfoList{
+    list-style: none;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+.ItemInfoList{
+    margin-top:15px;
+    display: flex;
+    align-items: center;
+}
+
+.ItemInfoList:nth-child(1)::before{
+    content:'';
+    display: block;
+    width:60px;
+    height: 60px;
+    background-image: url(../../../../shared/img/Phone.png);
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.ItemInfoList:nth-child(2)::before{
+    content:'';
+    display: block;
+    width:60px;
+    height: 60px;
+    background-image: url(../../../../shared/img/email.png);
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ItemInfoList:nth-child(3)::before{
+    content:'';
+    display: block;
+    width:60px;
+    height: 60px;
+    background-image: url(../../../../shared/img/Star.png);
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

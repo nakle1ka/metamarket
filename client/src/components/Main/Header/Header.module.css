@@ -1,7 +1,7 @@
 .wrapper {
   display: block;
   position: sticky;
-  height: 100vw;
+  /* height: 100vw; */
   width: 100%;
   padding: 10px;
 }

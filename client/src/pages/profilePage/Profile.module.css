@@ -1,0 +1,6 @@
+
+.ProfileContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin:50px 50px 50px 50px;
+}
