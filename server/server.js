@@ -6,7 +6,7 @@ const cors = require('cors')
 require('dotenv').config();
 
 const app = express()
-const router = require("./router/router")
+const router = require("./routers/router")
 
 const PORT = process.env.PORT;
 const URL = process.env.DB_URL;
