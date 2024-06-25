@@ -3,9 +3,15 @@ import Order from '../../components/ProfileComponents/MyOrders/Order/order'
 import UserStats from '../../components/ProfileComponents/UserStats/UserStats'
 import UserInfo from '../../components/ProfileComponents/userInfo/UserInfo'
 import classes from './Profile.module.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-export default function Profile() {
+export default function Profile({changeIsProfile}) {
+	useEffect(()=>{
+		changeIsProfile()
+	},[])
+
+
+
 	const [orders, setOrders] = useState([
 		{
 			OrderName: 'в',
