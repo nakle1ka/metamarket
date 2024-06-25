@@ -10,7 +10,9 @@
 
 @media (max-width:1440px){
     .ProfileContainer{
-        gap:100px
+        gap:100px;
+        width: 95vw;
+        
     }
 }
 
