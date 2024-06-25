@@ -2,5 +2,20 @@
 .ProfileContainer{
     display: flex;
     flex-wrap: wrap;
-    margin:50px 50px 50px 50px;
+    align-items: center;
+    justify-content: center;
+    
+    gap:200px;
+}
+
+@media (max-width:1440px){
+    .ProfileContainer{
+        gap:100px
+    }
+}
+
+@media(min-width:1441px){
+    .ProfileContainer{
+        gap:100px
+    }
 }

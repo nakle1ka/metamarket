@@ -1,3 +1,7 @@
+
+
+
+
 .profileImg {
 	width: 150px;
 	height: 150px;
@@ -34,6 +38,7 @@
 
 .UserInfoContainer {
     max-width: 384px;
+	height: 750px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

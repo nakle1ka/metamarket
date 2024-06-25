@@ -1,0 +1,56 @@
+.StatsSection{
+    height: 600px;
+    width:450px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.2;
+}
+.StatsLogotype{
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.StatsLogotype::before{
+    content:'';
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../../../shared/img/Statistics.png);
+}
+
+.UserStatsList{
+    height: 100%;
+    border-radius: 20px;
+    background-color: var(--light-famous-color);
+    list-style: none;
+    
+    
+}
+
+.UserStatsList li{
+    display: flex;
+    font-size: 32px;
+    font-weight: 600;
+    justify-content: space-between;
+    height: 60px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top: 10px;
+}
+
+
+@media (max-width:375px){
+    .StatsLogotype{
+        font-size: 40px;
+    }
+
+    .UserStatsList li{
+        font-size: 25px;
+    }
+}
+
+@media(min-width:700px) and (max-width:1640px){
+    .StatsSection{
+        flex-grow: 1;
+    }
+}
