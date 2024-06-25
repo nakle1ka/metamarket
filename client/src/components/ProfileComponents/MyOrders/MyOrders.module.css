@@ -53,6 +53,15 @@
 }
 
 
+.SelectSort{
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--famous-color);
+    font-size: 25px;
+    font-weight: 600;
+    height:70px
+}
+
 
 @media (max-width:375px) {
 .OrdersContainer::-webkit-scrollbar{
