@@ -2,7 +2,7 @@
 .MyOrdersSection{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+   
     flex-grow: 2;
     height: 600px;
 }
@@ -10,11 +10,8 @@
 
 .OrdersContainer{
     overflow-y: auto;
-    
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    
     
 }
 
@@ -41,6 +38,7 @@
     font-size: 55px;
     display: flex;
     align-items: center;
+    
 }
 .OrdersLogotype::before{
     content: '';
@@ -53,22 +51,29 @@
 }
 
 
-.SelectSort{
-    outline: none;
-    border-radius: 10px;
-    background-color: var(--famous-color);
-    font-size: 25px;
+.LinkOnOtherProfile{
+    font-size: 30px;
     font-weight: 600;
-    height:70px
+    color:var(--famous-color);
+    margin-left: 30px;
+    text-decoration: none;
+    
 }
 
 
-@media (max-width:375px) {
+@media (max-width:475px) {
 .OrdersContainer::-webkit-scrollbar{
     appearance: none;
     width:5px;
     }
     .OrdersLogotype{
         font-size: 40px;
+    }
+    .LinkOnOtherProfile{
+        font-size: 20px;
+        margin:0;
+    }
+    .OrdersLogotype::before{
+        display: none;
     }
 }

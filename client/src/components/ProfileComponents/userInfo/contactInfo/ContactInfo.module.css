@@ -5,13 +5,18 @@
 }
 
 
-.ItemInfoList{
-    margin-top:15px;
+.InfoList li{
+     margin-top:15px;
     display: flex;
     align-items: center;
 }
 
-.ItemInfoList:nth-child(1)::before{
+
+
+
+
+
+.InfoList li:nth-child(1)::before{
     content:'';
     display: block;
     width:60px;
@@ -23,7 +28,7 @@
 }
 
 
-.ItemInfoList:nth-child(2)::before{
+.InfoList li:nth-child(2)::before{
     content:'';
     display: block;
     width:60px;
@@ -34,7 +39,7 @@
     background-position: center;
 }
 
-.ItemInfoList:nth-child(3)::before{
+.InfoList li:nth-child(3)::before{
     content:'';
     display: block;
     width:60px;
@@ -43,4 +48,11 @@
     background-size: 45px 45px;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@media(max-width:330px){
+    .InfoList{
+    
+    font-size: 25px;
+}
 }

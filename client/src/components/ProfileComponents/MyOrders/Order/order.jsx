@@ -1,10 +1,10 @@
 import classes from './Order.module.css'
 import TestImage from './image 15.png'
-export default function Order({OrderName,OrderPrice,OrderStatus,OrderSrc}){
+export default function Order({OrderName,OrderPrice,OrderStatus,OrderSrc,style}){
     return (
-			<article className={classes.OrderArticle}>
+			<article className={classes.OrderArticle} style={style}>
 				<div>
-					<img src={TestImage} className={classes.OrderSrc} />
+					<img src={TestImage} className={classes.OrderSrc} alt='картинка товара'/>
 				</div>
 				<div>
 					<h3 className={classes.OrderName}>{OrderName}</h3>

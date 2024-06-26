@@ -1,12 +1,12 @@
-
 .ProfileContainer{
     display: flex;
-    flex-wrap: wrap;
+    
     align-items: center;
     justify-content: center;
     
     gap:100px;
 }
+
 
 
 
@@ -17,4 +17,8 @@
         
     }
 }
-
+@media(max-width:1000px){
+    .ProfileContainer{
+        flex-wrap: wrap;
+    }
+}

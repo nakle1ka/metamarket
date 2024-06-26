@@ -1,0 +1,42 @@
+.Modal{
+    position:absolute;
+    top:auto;
+    bottom: auto;
+    right:auto;
+    left: auto;
+    width: 60%;
+    height: 80%;
+    overflow-y: auto;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+
+.Modal::-webkit-scrollbar{
+    appearance: none;
+    width:10px;
+    
+    
+   
+}
+
+.Modal::-webkit-scrollbar-track{
+    background-color: var(--light-famous-color);
+   
+    border-radius: 20px;
+}
+
+.Modal::-webkit-scrollbar-thumb{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--famous-color);
+}
+
+
+
+.ModalLogotype{
+    font-size: 48px;
+    font-weight: 600;
+    margin:50px 50px 50px 50px
+}

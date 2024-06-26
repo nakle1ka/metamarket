@@ -43,10 +43,15 @@
 @media (max-width:375px){
     .StatsLogotype{
         font-size: 40px;
+       
     }
 
     .UserStatsList li{
         font-size: 25px;
+    }
+    .StatsSection{
+        flex-grow: 1;
+        margin: 0;
     }
 }
 

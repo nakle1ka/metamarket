@@ -4,12 +4,13 @@ import Footer from './components/Main/Footer/Footer'
 import Main from './pages/main'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Profile from './pages/profilePage/Profile'
+import SallerProfile from './pages/SallerProfile/SallerProfile'
 import { useState } from 'react'
 
 function App() {
 	const [isProfile,setIsProfile] = useState(false)
-	function changeIsProfile(){
-		isProfile ? setIsProfile(false) : setIsProfile(true)
+	function changeIsProfileTrue(){
+		setIsProfile(true)
 	}
 	return (
 		<div style={{ padding: '20px' }}>
@@ -18,10 +19,15 @@ function App() {
 				<BrowserRouter>
 					<Routes>
 						<Route index element={<Main />} />
-
+						<Route
+							path='/SallerProfile'
+							element={
+								<SallerProfile changeIsProfileTrue={changeIsProfileTrue} />
+							}
+						/>
 						<Route
 							path='/profile'
-							element={<Profile changeIsProfile={changeIsProfile} />}
+							element={<Profile changeIsProfileTrue={changeIsProfileTrue} />}
 						/>
 					</Routes>
 				</BrowserRouter>
