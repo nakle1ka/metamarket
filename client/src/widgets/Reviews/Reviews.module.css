@@ -1,0 +1,36 @@
+.flexContainer{
+    display: flex;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.reviewText{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.UserAvatar{
+    width:100px;
+    height: 100px;
+}
+
+.gradeAndUsername{
+    margin-left: 20px;
+}
+
+.reviewContainer{
+    margin:50px 0px 50px 20px
+}
+
+@media(max-width:500px){
+    .flexContainer{
+        font-size: 20px;
+    }
+    .UserAvatar{
+        width:60px;
+        height: 60px;
+    }
+    .reviewText{
+        font-size: 15px;
+    }
+}

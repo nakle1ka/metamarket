@@ -16,23 +16,7 @@
 }
 
 
-.OrdersContainer::-webkit-scrollbar{
-    appearance: none;
-    width:10px;
-    
-   
-}
 
-.OrdersContainer::-webkit-scrollbar-track{
-    background-color: var(--light-famous-color);
-}
-
-.OrdersContainer::-webkit-scrollbar-thumb{
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    background-color: var(--famous-color);
-}
 
 .OrdersLogotype{
     font-size: 55px;

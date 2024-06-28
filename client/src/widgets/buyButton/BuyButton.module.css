@@ -1,0 +1,27 @@
+.Button{
+    width:90%;
+    height: 65px;
+    border-radius: 20px;
+    color:white;
+    background-color: var(--famous-color);
+    border: none;
+    font-size: 45px;
+    font-weight: 600;
+    cursor: pointer;
+    margin:10px;
+}
+
+.Button:hover{
+    background-color: var(--famous-hover-color);
+}
+
+.Button:active{
+    background-color: var(--famous-active-color)
+}
+
+@media(max-width:375px){
+    .Button{
+        font-size: 20px;
+        height: 30px;
+    }
+}

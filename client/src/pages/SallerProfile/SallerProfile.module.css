@@ -7,8 +7,13 @@
     gap:100px;
 }
 
+.liElement:nth-child(3){
+    cursor: pointer;
+}
 
-
+.liElement:nth-child(3):hover{
+    outline: 5px solid var(--famous-color);
+}
 
 @media (max-width:330px){
     .ProfileContainer{

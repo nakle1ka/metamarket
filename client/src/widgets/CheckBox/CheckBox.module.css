@@ -1,0 +1,25 @@
+.CheckBox{
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    opacity: 0;
+    
+}
+
+.CheckBoxLabel{
+    
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--light-famous-color);
+}
+
+.CheckBox:checked + label{
+    background-image: url(../../shared/svg/Done.svg);
+    background-size: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+

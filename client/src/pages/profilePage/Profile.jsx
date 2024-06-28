@@ -33,8 +33,8 @@ import { useState } from 'react'
 export {sortByName,sortByPrice}
 
 
-export default function Profile({ changeIsProfileTrue }) {
-	changeIsProfileTrue()
+export default function Profile() {
+	
 	
 
 	const [orders, setOrders] = useState([

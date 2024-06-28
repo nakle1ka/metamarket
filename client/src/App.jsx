@@ -5,16 +5,14 @@ import Main from './pages/main'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Profile from './pages/profilePage/Profile'
 import SallerProfile from './pages/SallerProfile/SallerProfile'
-import { useState } from 'react'
+import Basket from './pages/basketPage/Basket'
+
 
 function App() {
-	const [isProfile,setIsProfile] = useState(false)
-	function changeIsProfileTrue(){
-		setIsProfile(true)
-	}
+	
 	return (
 		<div style={{ padding: '20px' }}>
-			<Header isProfile={isProfile} />
+			{/* <Header /> */}
 			<main>
 				<BrowserRouter>
 					<Routes>
@@ -22,13 +20,16 @@ function App() {
 						<Route
 							path='/SallerProfile'
 							element={
-								<SallerProfile changeIsProfileTrue={changeIsProfileTrue} />
+								<SallerProfile />
 							}
 						/>
 						<Route
 							path='/profile'
-							element={<Profile changeIsProfileTrue={changeIsProfileTrue} />}
+							element={<Profile />}
 						/>
+						<Route
+						path='/Basket'
+						element={<Basket/>}/>
 					</Routes>
 				</BrowserRouter>
 			</main>

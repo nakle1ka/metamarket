@@ -1,0 +1,64 @@
+.CounterButton{
+    cursor: pointer;
+    width:30%;
+    border: none;
+    background-color: transparent;
+    height:100%;
+    
+
+}
+
+.CounterContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:150px;
+    height: 75px;
+    background-color: var(--light-famous-color);
+    border-radius: 20px;
+}
+
+#buttonOne{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#buttonTwo{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#buttonOne::after{
+    content:'';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../../shared/svg/Plus\ Math.svg);
+}
+
+#buttonTwo::after{
+    content:'';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../../shared/svg/Subtract.svg);
+}
+
+@media(max-width:345px){
+    .CounterContainer{
+        width:75px;
+        height: 37px;
+
+    }
+    #buttonOne::after{
+        width: 15px;
+        height: 15px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #buttonTwo::after{
+        width: 15px;
+        height: 15px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

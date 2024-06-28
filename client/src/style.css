@@ -3,10 +3,29 @@
     --famous-color: #3AAFA9;
     --icons-color: #3AAFA959;
     --light-famous-color:#3AAFA940;
+    --famous-hover-color:#41c5bf;
+    --famous-active-color:rgb(78, 182, 156)
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+}
+::-webkit-scrollbar {
+	appearance: none;
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--light-famous-color);
+
+	border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background-color: var(--famous-color);
 }

@@ -1,11 +1,17 @@
+import React from 'react'
 import classes from './Modal.module.css'
 
-export default function Modal({ children, logotype, isOpen }) {
+ const Modal =React.forwardRef(({ children, logotype,onCloseClick},ref) =>{
+	
 	return (
-		<dialog open={isOpen} className={classes.Modal}>
-			<h3 className={classes.ModalLogotype}>{logotype}</h3>
+		<dialog className={classes.Modal} ref={ref}>
+			<div className={classes.LogotypeButtonContainer}>
+				<h3 className={classes.ModalLogotype}>{logotype}</h3>
+				<button className={classes.CloseButton} onClick={onCloseClick}></button>
+			</div>
+
 			<div className={classes.reviewsContainer}>{children}</div>
-			<button>{}</button>
 		</dialog>
 	)
-}
+})
+export default Modal
