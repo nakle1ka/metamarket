@@ -12,6 +12,8 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+
 ::-webkit-scrollbar {
 	appearance: none;
 	width: 10px;

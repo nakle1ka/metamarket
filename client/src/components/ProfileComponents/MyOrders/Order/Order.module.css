@@ -1,8 +1,9 @@
 .OrderArticle {
 	display: flex;
-	justify-content: center;
+	justify-content:flex-start;
 	align-items: center;
 	margin: 0px 0px 50px 0px;
+	
 }
 
 .OrderName {
@@ -27,26 +28,41 @@
 	height: 230px;
 	margin-right: 10px;
 }
-@media (max-width: 320px) {
+
+.Wrapper{
+	display: flex;
+	align-items: center;
+}
+
+@media (max-width: 425px) {
 	.OrderSrc {
-		width: 150px;
-		height: 150px;
+		width: 100px;
+		height: 100px;
 	}
 
 	
 
 	.OrderName {
-		font-size: 30px;
+		font-size: 20px;
 		font-weight: 600;
 	}
 
 	.OrderPrice {
-		font-size: 25px;
+		font-size: 20px;
 		font-weight: 600;
 	}
 
 	.OrderStatus {
 		font-size: 24px;
 		font-weight: 600;
+	}
+}
+@media(min-width:425px) and (max-width:500px){
+	.Wrapper{
+		flex-wrap: wrap;	
+	}
+	.OrderArticle{
+		align-items: flex-start;
+		justify-self:flex-end
 	}
 }

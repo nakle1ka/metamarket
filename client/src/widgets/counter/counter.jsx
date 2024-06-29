@@ -1,7 +1,7 @@
 import classes from './counter.module.css'
 
 
-export default function Counter({ children, onClickButtonOne, onClickButtonTwo }) {
+export default function Counter({ counter, onClickButtonOne, onClickButtonTwo }) {
 	return (
 		<div className={classes.CounterContainer}>
 			<button
@@ -9,7 +9,7 @@ export default function Counter({ children, onClickButtonOne, onClickButtonTwo }
 				className={classes.CounterButton}
 				id={classes.buttonOne}
 			/>
-			{children}
+			{counter}
 			<button
 				onClick={onClickButtonTwo}
 				className={classes.CounterButton}

@@ -5,6 +5,7 @@
     background-color: transparent;
     height:100%;
     
+    
 
 }
 
@@ -14,6 +15,8 @@
     align-items: center;
     width:150px;
     height: 75px;
+    font-size: 45px;
+    color: var(--famous-color);
     background-color: var(--light-famous-color);
     border-radius: 20px;
 }
@@ -43,10 +46,11 @@
     background-image: url(../../shared/svg/Subtract.svg);
 }
 
-@media(max-width:345px){
+@media(max-width:425px){
     .CounterContainer{
         width:75px;
         height: 37px;
+        font-size: 20px;
 
     }
     #buttonOne::after{

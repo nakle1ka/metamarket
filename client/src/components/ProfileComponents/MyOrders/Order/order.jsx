@@ -8,23 +8,27 @@ export default function Order({
 	style,
 	counterForBasket,
 	checkedForBasket,
+	deleteForBasket
 }) {
 	return (
 		<article className={classes.OrderArticle} style={style}>
-			{checkedForBasket}
-			<div>
-				<img
-					src={TestImage}
-					className={classes.OrderSrc}
-					alt='картинка товара'
-				/>
+			<div className={classes.Wrapper}>
+				{checkedForBasket}
+				<div>
+					<img
+						src={TestImage}
+						className={classes.OrderSrc}
+						alt='картинка товара'
+					/>
+				</div>
+				<div>
+					<h3 className={classes.OrderName}>{OrderName}</h3>
+					<p className={classes.OrderPrice}>{OrderPrice}</p>
+					<p className={classes.OrderStatus}>{OrderStatus}</p>
+					{counterForBasket}
+				</div>
 			</div>
-			<div>
-				<h3 className={classes.OrderName}>{OrderName}</h3>
-				<p className={classes.OrderPrice}>{OrderPrice}</p>
-				<p className={classes.OrderStatus}>{OrderStatus}</p>
-				{counterForBasket}
-			</div>
+			{deleteForBasket}
 		</article>
 	)
 }

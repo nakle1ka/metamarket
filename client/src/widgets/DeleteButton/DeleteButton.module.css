@@ -1,0 +1,21 @@
+.DeleteButton::before{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../../shared/svg/Trash.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+    
+.DeleteButton{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+@media(max-width:375px){
+    .DeleteButton{
+        background-size: 10px;
+    }
+}

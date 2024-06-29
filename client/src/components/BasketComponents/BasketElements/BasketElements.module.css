@@ -28,3 +28,34 @@
     background-position: center;
     background-size: 60px;
 }
+@media(max-width:320px){
+    
+    .ElementsLogotype{
+        font-size: 30px;
+    }
+    .ElementsLogotype::before{
+        background-size: 40px;
+    }
+}
+
+@media(min-width:375px) and (max-width:400px){
+    .ElementsContainer{
+        width:375px;
+        font-size: 30px;
+    }
+    .OrdersSection{
+        width:375px;
+    }
+
+}
+
+@media(min-width:425px) and (max-width:500px){
+    
+    .ElementsContainer{
+        width:425px;
+        
+    }
+    .OrdersSection{
+        width:425px;
+    }
+}

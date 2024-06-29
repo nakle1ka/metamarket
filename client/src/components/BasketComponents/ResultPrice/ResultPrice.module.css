@@ -1,9 +1,24 @@
 .SectionLogotype{
     font-size:55px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+   
+}
+
+
+.SectionLogotype::before{
+    content: '';
+    display: inline-block;
+    width:60px;
+    height: 60px;
+    background-image: url(../../../shared/svg/Dollar.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .ResultPriceSection{
+    background-color: white;
     flex-grow: 1;
     
     
@@ -32,6 +47,32 @@
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    width: 100%;
     border-radius: 20px;
     background-color: var(--light-famous-color);
+}
+
+
+@media(max-width:425px){
+    
+    .SectionLogotype{
+        font-size: 30px;
+    }
+    .ElementsList{
+        font-size: 25px;
+    }
+    
+
+}
+
+@media(max-width:425px){
+    .ResultPriceSection{
+        margin-top:65px;
+    }
+}
+
+@media(min-width:900px) and (max-width:1024px){
+    .ResultPriceSection{
+        flex-basis: 600px;
+    }
 }
